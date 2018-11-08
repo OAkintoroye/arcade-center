@@ -23,13 +23,14 @@ body{
 
 </head>
 <body>
+<?php include 'accessaccounts.php'; ?>
 <h1 class="animated tada ">Welcome to the Arcade Center</h1>
 <h3 class="animated tada "> A place to store all your favorite games :D!</h3>
 <div style="text-align:center;">
-<form method = "post" action = "<?php echo $_SERVER['PHP_SELF'];?>">
+<form method = "post" action = "homepagebtn.php">
     <div style="text-align:center; display: inline-block;" class="btn-group">
-        <button type="button" class="btn btn-primary" name= "btn-sigin1">Sign In</button>    
-        <button type="button" class="btn btn-primary" name= "btn-register1">Register</button>    
+        <button type="submit" class="btn btn-primary" name= "btn-sigin1">Sign In</button>    
+        <button type="submit" class="btn btn-primary" name= "btn-register1">Register</button>    
     </div>
 </form>
 </div>
@@ -68,4 +69,3 @@ body{
 </body>
 
 </html>
-
